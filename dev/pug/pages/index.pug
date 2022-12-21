@@ -1,0 +1,14 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Kazik Wood - Homepage'
+  - var pageClass = 'index-page'
+
+block content
+  - var productInfo = ['Дрова', 'Топливные брикеты', 'Пелеты (топливные гранулы)', 'Древесный уголь', 'Рубанные ветки твердых пород', 'Пиломатериалы хвойных пород', 'Барбекю бокси, розпалювачі', 'Щепа']
+  - var productPrice = ['25', '100', '70', '38', '27', '27', '20', '20']
+  
+  include ../custom/index-home/welcome
+  include ../custom/index-home/products
+
+block script

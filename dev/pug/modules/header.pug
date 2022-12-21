@@ -1,0 +1,36 @@
+header.header--wrap
+  .container
+    .header
+      ._phone
+        a.lang(href="#")
+          +icon("subtract")
+          | UA
+          +icon("dropdown")
+        a.phone(href="tel:+380965333906")
+          +icon("phone")
+          | (096) 5333906
+        a.phone(href="tel:+380977408019")
+          +icon("phone")
+          | (097) 7408019
+      ._logo
+        a(href="/")
+          img(src='./static/img/general/logotype.png')
+      ._info
+        +icon("clock")
+        ._graf
+          p.graf
+            | Графік роботы:
+          p 
+            | пн-пт 8:00 – 18:00
+            br 
+            | сб 8:00 – 12:00
+        button.btn_header
+          | Заказать
+      ._burger-btn 
+        span
+        span
+        span
+      //- ._burger-menu
+      //-   include menu
+    ._menu
+      include menu

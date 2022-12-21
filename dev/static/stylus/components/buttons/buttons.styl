@@ -1,0 +1,88 @@
+.btn_global
+	width max-content
+	padding 0 45px
+	height 45px
+	display flex
+	justify-content center
+	align-items center
+	border-radius 5px
+	text-transform uppercase
+	background white
+	border none
+	cursor pointer
+	font-weight bold
+	box-shadow 1px 1px 2px purple
+	transition()
+	&:hover
+		color purple
+	&:active
+		box-shadow 1px 1px 4px purple
+		transform translateY(3px) scale(0.98)
+
+.btn_header
+	width: 161px;
+	height: 54.56px;
+	color baseWhite
+	justify-content center
+	align-items center
+	border-radius 5px
+	background #FF6B00
+	border none
+	cursor pointer
+	font-family: mainFont;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #FFFFFF;
+	border: 2px solid baseBlack;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+	transition()
+	&:active
+		box-shadow 1px 1px 4px black
+		transform translateY(3px) scale(0.98)
+
+.btn_select
+	@extend .btn_header
+	width: 239px;
+	height: 55px;
+	border none
+
+.swiper-prev_btn, .swiper-next_btn
+	size(38px)
+	border-radius 50%
+	background-color #fff
+	border 2px solid #FF6B00
+	position absolute
+	bottom -58px
+	z-index 2
+	display flex
+	justify-content: center;
+	align-items center
+	transition()
+	@media $lg-and-smaller
+		size(30px)
+		bottom -56px
+	@media $md-and-smaller
+		bottom -52px
+	@media $sm-and-smaller
+		size(25px)
+		bottom -52px
+	@media $xs-and-smaller
+		bottom -44px
+	svg
+		size(100%)
+		fill #FF6B00
+.swiper-prev_btn
+	transform rotate(90deg)
+	left 55px
+	@media $lg-and-smaller
+		left 20px
+.swiper-next_btn
+	right 55px
+	transform rotate(-90deg)
+	@media $lg-and-smaller
+		right 20px
+
+.swiper-button-disabled
+	// pointer-events: none
+	opacity: 0

@@ -1,0 +1,215 @@
+.header
+  size(100%, px(106))
+  display flex
+  justify-content space-between
+  align-items: center
+  &--wrap
+    width 100%
+    position relative
+    z-index 2
+    background: rgba(255, 107, 0, 0.35);
+    border-bottom: 2px solid #FF6B00;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+  &__phone
+    width calc(50% - 83px)
+    @media $lg-and-smaller
+      display none
+    a.lang
+      display inline-block
+      padding-left: 5px
+      margin-right 48px
+      font-family: mainFont;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: baseWhite;
+      position relative;
+      .icon-subtract
+        position absolute;
+        width: 48.94px;
+        height: 39px;
+        fill #A99F84
+        top 50%
+        left 0
+        transform translateY(-50%)
+      .icon-dropdown
+        width: 13.53px;
+        height: 7.52px;
+        fill #fff
+    a.phone
+      margin-right 35px
+      font-family: mainFont;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 30px;
+      color: baseWhite;
+      svg
+        size(22px)
+        fill #A99F84
+        margin-right 12px
+      @media $xl-and-smaller
+        font-size: 18px;
+        svg
+          size(20px)
+  &__logo
+    width 166px
+    @media $lg-and-smaller
+      width 100px
+    a
+      width 100%
+      display block
+      transform translateY(40px)
+      @media $lg-and-smaller
+        transform translateY(0)
+      img
+        width 100%
+        height: auto
+        display block
+  &__info
+      width calc(50% - 83px)
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      @media $lg-and-smaller
+        display none
+      svg
+        size(22px)
+        fill #A99F84
+        margin-right 12px
+      p
+        font-family: mainFont;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: baseWhite;
+      button.btn_header
+        margin-left 47px
+      p.graf
+        margin-right 13px
+        @media $xl-and-smaller
+          margin 0
+  &__graf
+    display flex
+    justify-content space-between
+    align-items center
+    @media $xl-and-smaller
+      flex-direction: column
+      p
+        text-align center
+
+  &__burger-btn
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 3;
+    display none
+    @media $lg-and-smaller
+      display block
+    span 
+      width: 100%
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      right: 0
+      transform: translate(-50%, -50%);
+      background-color: #FF6B00
+      transition: all 0.5s;
+  &__burger-btn span:nth-of-type(2) 
+    top: calc(50% - 10px);
+  &__burger-btn span:nth-of-type(3) 
+    top: calc(50% + 10px);
+
+  &__burger-menu
+    display none
+    @media $lg-and-smaller
+      display block
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+    padding: 30px;
+    background: #FFEFBA;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    z-index 2
+    .nav__item
+      padding-bottom 10px
+        
+    .nav__link
+      font-size: 25px
+      color #FF6B00
+        
+  &__burger-menu.active 
+	  transform: translateX(0);
+
+  &__burger-btn.active span:nth-of-type(1) 
+    display: none;
+
+  &__burger-btn.active span:nth-of-type(2) 
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+
+  &__burger-btn.active span:nth-of-type(3) 
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+
+
+.container
+  position relative
+
+.container__menu
+  width: 100%
+  position absolute
+  top 170px
+  left 50%
+  transform: translateX(-50%)
+  @media $lg-and-smaller
+    display block
+    top 0
+    left 50%
+    position: absolute
+    background-color: #FFEFBA
+    height 500px
+    padding 25px
+
+  .nav
+    width: 100%
+    display: flex
+    justify-content space-between
+    flex-wrap wrap
+    &__item
+      width: 25%
+      display flex
+      justify-content center
+      padding-bottom 50px
+      @media $lg-and-smaller
+        width 100%
+        justify-content flex-start
+        padding-bottom 10px
+    a.nav__link
+      text-align center
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 33px;
+      color: baseWhite
+      position: relative
+      transition all .3s ease
+      &:hover
+        color #FF6B00
+        &::after
+          background-color #FF6B00
+          width 30px
+      &::after
+        content ""
+        position: absolute
+        top 50px
+        left 50%
+        transform: translateX(-50%)
+        width 10px
+        height 5px
+        border-radius: 3px
+        background-color: baseWhite
+        transition all .3s ease

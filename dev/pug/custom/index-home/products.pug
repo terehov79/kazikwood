@@ -1,0 +1,707 @@
+.products--wrap
+  .container
+    .products
+      h2 Наші товари
+
+      ._section
+        ._mini
+          ._thumb
+            img(src='./static/img/content/product00.png')
+          ._price
+            p=productInfo[0]
+            ._block
+              span Цена от
+              span=productPrice[0]
+              span грн
+          ._icon
+            +icon("down")
+        ._full
+          .row
+            .col-lg-5.col-md-5
+              .slider
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/product00.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-01.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-02.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-03.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-04.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-05.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-06.png')
+                .swiper_btn
+                  button(type='button' name='prev').swiper-prev_btn
+                    +icon('dropdown')
+                  button(type='button' name='next').swiper-next_btn
+                    +icon('dropdown')
+                .swiper-pagination
+              .navigation
+            .col-lg-7.col-md-7
+              .full__info
+                ._head
+                  p=productInfo[0]
+                  ._icon
+                      +icon("down")
+                ._body
+                  p.text
+                    | Купити дрова. Ми здійснюємо продаж і доставку колотих дров з берези, сосни, ялини, осики, вільхи і дуба по Хмельницькій області і в Хмельницьку в найкоротші терміни і за найвигіднішими цінами!
+                  p.text
+                    | Дрова соснові. Дрова з доставкою. Дрова з доставкою. Доставимо дрова. Привеземо дрова.
+                  p.text
+                    | Дрова дубові. Осикові Дрова. Дрова вільхові. Дрова ялинові.
+          
+          .select 
+            form(action="/")
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Сетки 8 кг/15дм" checked)
+                    | Сетки 8 кг/15дм
+                ._price
+                  span=productPrice[0]
+                  span грн
+                  span /
+                  span 23,50
+                  span грн
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Дрова колоті в складометрах насипні")
+                    | Дрова колоті в складометрах насипні
+                ._price
+                  span 700
+                  span грн
+              ._btn
+                button(type="submit" name="submit").btn_select
+                  | Замовити
+
+      ._section
+        ._mini
+          ._thumb
+            img(src='./static/img/content/product01.png')
+          ._price
+            p=productInfo[1]
+            ._block
+              span Цена от
+              span=productPrice[1]
+              span грн
+          ._icon
+            +icon("down")
+        ._full
+          .row
+            .col-lg-5.col-md-5
+              .slider
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/product01.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-01.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-02.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-03.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-04.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-05.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-06.png')
+                .swiper_btn
+                  button(type='button' name='prev').swiper-prev_btn
+                    +icon('dropdown')
+                  button(type='button' name='next').swiper-next_btn
+                    +icon('dropdown')
+                .swiper-pagination
+              .navigation
+            .col-lg-7.col-md-7
+              .full__info
+                ._head
+                  p=productInfo[1]
+                  ._icon
+                      +icon("down")
+                ._body
+                  p.text
+                    | Купити дрова. Ми здійснюємо продаж і доставку колотих дров з берези, сосни, ялини, осики, вільхи і дуба по Хмельницькій області і в Хмельницьку в найкоротші терміни і за найвигіднішими цінами!
+                  p.text
+                    | Дрова соснові. Дрова з доставкою. Дрова з доставкою. Доставимо дрова. Привеземо дрова.
+                  p.text
+                    | Дрова дубові. Осикові Дрова. Дрова вільхові. Дрова ялинові.
+          
+          .select 
+            form(action="/")
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Сетки 8 кг/15дм" checked)
+                    | Сетки 8 кг/15дм
+                ._price
+                  span=productPrice[1]
+                  span грн
+                  span /
+                  span 23,50
+                  span грн
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Дрова колоті в складометрах насипні")
+                    | Дрова колоті в складометрах насипні
+                ._price
+                  span 700
+                  span грн
+              ._btn
+                button(type="submit" name="submit").btn_select
+                  | Замовити
+
+      ._section
+        ._mini
+          ._thumb
+            img(src='./static/img/content/product02.png')
+          ._price
+            p=productInfo[2]
+            ._block
+              span Цена от
+              span=productPrice[2]
+              span грн
+          ._icon
+            +icon("down")
+        ._full
+          .row
+            .col-lg-5.col-md-5
+              .slider
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/product02.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-01.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-02.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-03.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-04.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-05.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-06.png')
+                .swiper_btn
+                  button(type='button' name='prev').swiper-prev_btn
+                    +icon('dropdown')
+                  button(type='button' name='next').swiper-next_btn
+                    +icon('dropdown')
+                .swiper-pagination
+              .navigation
+            .col-lg-7.col-md-7
+              .full__info
+                ._head
+                  p=productInfo[2]
+                  ._icon
+                      +icon("down")
+                ._body
+                  p.text
+                    | Купити дрова. Ми здійснюємо продаж і доставку колотих дров з берези, сосни, ялини, осики, вільхи і дуба по Хмельницькій області і в Хмельницьку в найкоротші терміни і за найвигіднішими цінами!
+                  p.text
+                    | Дрова соснові. Дрова з доставкою. Дрова з доставкою. Доставимо дрова. Привеземо дрова.
+                  p.text
+                    | Дрова дубові. Осикові Дрова. Дрова вільхові. Дрова ялинові.
+          
+          .select 
+            form(action="/")
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Сетки 8 кг/15дм" checked)
+                    | Сетки 8 кг/15дм
+                ._price
+                  span=productPrice[2]
+                  span грн
+                  span /
+                  span 23,50
+                  span грн
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Дрова колоті в складометрах насипні")
+                    | Дрова колоті в складометрах насипні
+                ._price
+                  span 700
+                  span грн
+              ._btn
+                button(type="submit" name="submit").btn_select
+                  | Замовити
+
+      ._section
+        ._mini
+          ._thumb
+            img(src='./static/img/content/product03.png')
+          ._price
+            p=productInfo[3]
+            ._block
+              span Цена от
+              span=productPrice[3]
+              span грн
+          ._icon
+            +icon("down")
+        ._full
+          .row
+            .col-lg-5.col-md-5
+              .slider
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/product03.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-01.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-02.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-03.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-04.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-05.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-06.png')
+                .swiper_btn
+                  button(type='button' name='prev').swiper-prev_btn
+                    +icon('dropdown')
+                  button(type='button' name='next').swiper-next_btn
+                    +icon('dropdown')
+                .swiper-pagination
+              .navigation
+            .col-lg-7.col-md-7
+              .full__info
+                ._head
+                  p=productInfo[3]
+                  ._icon
+                      +icon("down")
+                ._body
+                  p.text
+                    | Купити дрова. Ми здійснюємо продаж і доставку колотих дров з берези, сосни, ялини, осики, вільхи і дуба по Хмельницькій області і в Хмельницьку в найкоротші терміни і за найвигіднішими цінами!
+                  p.text
+                    | Дрова соснові. Дрова з доставкою. Дрова з доставкою. Доставимо дрова. Привеземо дрова.
+                  p.text
+                    | Дрова дубові. Осикові Дрова. Дрова вільхові. Дрова ялинові.
+          
+          .select 
+            form(action="/")
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Сетки 8 кг/15дм" checked)
+                    | Сетки 8 кг/15дм
+                ._price
+                  span=productPrice[3]
+                  span грн
+                  span /
+                  span 23,50
+                  span грн
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Дрова колоті в складометрах насипні")
+                    | Дрова колоті в складометрах насипні
+                ._price
+                  span 700
+                  span грн
+              ._btn
+                button(type="submit" name="submit").btn_select
+                  | Замовити
+
+      ._section
+        ._mini
+          ._thumb
+            img(src='./static/img/content/product04.png')
+          ._price
+            p=productInfo[4]
+            ._block
+              span Цена от
+              span=productPrice[4]
+              span грн
+          ._icon
+            +icon("down")
+        ._full
+          .row
+            .col-lg-5.col-md-5
+              .slider
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/product04.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-01.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-02.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-03.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-04.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-05.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-06.png')
+                .swiper_btn
+                  button(type='button' name='prev').swiper-prev_btn
+                    +icon('dropdown')
+                  button(type='button' name='next').swiper-next_btn
+                    +icon('dropdown')
+                .swiper-pagination
+              .navigation
+            .col-lg-7.col-md-7
+              .full__info
+                ._head
+                  p=productInfo[4]
+                  ._icon
+                      +icon("down")
+                ._body
+                  p.text
+                    | Купити дрова. Ми здійснюємо продаж і доставку колотих дров з берези, сосни, ялини, осики, вільхи і дуба по Хмельницькій області і в Хмельницьку в найкоротші терміни і за найвигіднішими цінами!
+                  p.text
+                    | Дрова соснові. Дрова з доставкою. Дрова з доставкою. Доставимо дрова. Привеземо дрова.
+                  p.text
+                    | Дрова дубові. Осикові Дрова. Дрова вільхові. Дрова ялинові.
+          
+          .select 
+            form(action="/")
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Сетки 8 кг/15дм" checked)
+                    | Сетки 8 кг/15дм
+                ._price
+                  span=productPrice[4]
+                  span грн
+                  span /
+                  span 23,50
+                  span грн
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Дрова колоті в складометрах насипні")
+                    | Дрова колоті в складометрах насипні
+                ._price
+                  span 700
+                  span грн
+              ._btn
+                button(type="submit" name="submit").btn_select
+                  | Замовити
+
+      ._section
+        ._mini
+          ._thumb
+            img(src='./static/img/content/product05.png')
+          ._price
+            p=productInfo[5]
+            ._block
+              span Цена от
+              span=productPrice[5]
+              span грн
+          ._icon
+            +icon("down")
+        ._full
+          .row
+            .col-lg-5.col-md-5
+              .slider
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/product05.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-01.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-02.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-03.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-04.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-05.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-06.png')
+                .swiper_btn
+                  button(type='button' name='prev').swiper-prev_btn
+                    +icon('dropdown')
+                  button(type='button' name='next').swiper-next_btn
+                    +icon('dropdown')
+                .swiper-pagination
+              .navigation
+            .col-lg-7.col-md-7
+              .full__info
+                ._head
+                  p=productInfo[5]
+                  ._icon
+                      +icon("down")
+                ._body
+                  p.text
+                    | Купити дрова. Ми здійснюємо продаж і доставку колотих дров з берези, сосни, ялини, осики, вільхи і дуба по Хмельницькій області і в Хмельницьку в найкоротші терміни і за найвигіднішими цінами!
+                  p.text
+                    | Дрова соснові. Дрова з доставкою. Дрова з доставкою. Доставимо дрова. Привеземо дрова.
+                  p.text
+                    | Дрова дубові. Осикові Дрова. Дрова вільхові. Дрова ялинові.
+          
+          .select 
+            form(action="/")
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Сетки 8 кг/15дм" checked)
+                    | Сетки 8 кг/15дм
+                ._price
+                  span=productPrice[5]
+                  span грн
+                  span /
+                  span 23,50
+                  span грн
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Дрова колоті в складометрах насипні")
+                    | Дрова колоті в складометрах насипні
+                ._price
+                  span 700
+                  span грн
+              ._btn
+                button(type="submit" name="submit").btn_select
+                  | Замовити
+
+      ._section
+        ._mini
+          ._thumb
+            img(src='./static/img/content/product06.png')
+          ._price
+            p=productInfo[6]
+            ._block
+              span Цена от
+              span=productPrice[6]
+              span грн
+          ._icon
+            +icon("down")
+        ._full
+          .row
+            .col-lg-5.col-md-5
+              .slider
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/product06.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-01.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-02.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-03.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-04.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-05.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-06.png')
+                .swiper_btn
+                  button(type='button' name='prev').swiper-prev_btn
+                    +icon('dropdown')
+                  button(type='button' name='next').swiper-next_btn
+                    +icon('dropdown')
+                .swiper-pagination
+              .navigation
+            .col-lg-7.col-md-7
+              .full__info
+                ._head
+                  p=productInfo[6]
+                  ._icon
+                      +icon("down")
+                ._body
+                  p.text
+                    | Купити дрова. Ми здійснюємо продаж і доставку колотих дров з берези, сосни, ялини, осики, вільхи і дуба по Хмельницькій області і в Хмельницьку в найкоротші терміни і за найвигіднішими цінами!
+                  p.text
+                    | Дрова соснові. Дрова з доставкою. Дрова з доставкою. Доставимо дрова. Привеземо дрова.
+                  p.text
+                    | Дрова дубові. Осикові Дрова. Дрова вільхові. Дрова ялинові.
+          
+          .select 
+            form(action="/")
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Сетки 8 кг/15дм" checked)
+                    | Сетки 8 кг/15дм
+                ._price
+                  span=productPrice[6]
+                  span грн
+                  span /
+                  span 23,50
+                  span грн
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Дрова колоті в складометрах насипні")
+                    | Дрова колоті в складометрах насипні
+                ._price
+                  span 700
+                  span грн
+              ._btn
+                button(type="submit" name="submit").btn_select
+                  | Замовити
+
+      ._section
+        ._mini
+          ._thumb
+            img(src='./static/img/content/product07.png')
+          ._price
+            p=productInfo[7]
+            ._block
+              span Цена от
+              span=productPrice[7]
+              span грн
+          ._icon
+            +icon("down")
+        ._full
+          .row
+            .col-lg-5.col-md-5
+              .slider
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/product07.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-01.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-02.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-03.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-04.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-05.png')
+                    .swiper-slide
+                      .slide
+                        img(src='./static/img/content/slide01-06.png')
+                .swiper_btn
+                  button(type='button' name='prev').swiper-prev_btn
+                    +icon('dropdown')
+                  button(type='button' name='next').swiper-next_btn
+                    +icon('dropdown')
+                .swiper-pagination
+              .navigation
+            .col-lg-7.col-md-7
+              .full__info
+                ._head
+                  p=productInfo[7]
+                  ._icon
+                      +icon("down")
+                ._body
+                  p.text
+                    | Купити дрова. Ми здійснюємо продаж і доставку колотих дров з берези, сосни, ялини, осики, вільхи і дуба по Хмельницькій області і в Хмельницьку в найкоротші терміни і за найвигіднішими цінами!
+                  p.text
+                    | Дрова соснові. Дрова з доставкою. Дрова з доставкою. Доставимо дрова. Привеземо дрова.
+                  p.text
+                    | Дрова дубові. Осикові Дрова. Дрова вільхові. Дрова ялинові.
+          
+          .select 
+            form(action="/")
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Сетки 8 кг/15дм" checked)
+                    | Сетки 8 кг/15дм
+                ._price
+                  span=productPrice[7]
+                  span грн
+                  span /
+                  span 23,50
+                  span грн
+              ._block
+                ._start
+                  label
+                    input(type="radio" name="item" value="Дрова колоті в складометрах насипні")
+                    | Дрова колоті в складометрах насипні
+                ._price
+                  span 700
+                  span грн
+              ._btn
+                button(type="submit" name="submit").btn_select
+                  | Замовити
+
+  .down
+    .container
+      .row.justify-content-center
+        .col-lg-10
+          .down__content
+            h2 Товар можливий під замовлення
+            p
+              | Доставка обговорюється індивідуально
+            P
+              | Готівковий та безготівковий розрахунок
+            form(action="/")
+              label
+                input(type="text" name="name" placeholder="Имя")
+              label
+                input(type="tel" name="phone" placeholder="Телефон")
+              button(type="submit" name="submit")
+                | Залишити заявку
+      .row
+        .col-12
+          .down__map
+            a(href="#")
+              img(src='./static/img/content/map.png')

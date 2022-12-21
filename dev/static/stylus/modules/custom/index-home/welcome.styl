@@ -1,0 +1,64 @@
+.welcome
+	width 100%
+	height 825px
+	padding 400px 0 30px
+	margin-top: -106px
+	@media $lg-and-smaller
+		padding 200px 0 30px
+		height 500px
+	@media $sm-and-smaller
+		height 350px
+		padding 150px 0 30px
+	@media $xs-and-smaller
+		padding: 130px 0 30px
+	&--wrap
+		width 100%
+		background-image: url(../img/general/hero.jpg)
+		background-repeat no-repeat
+		background-size: cover
+		background-position: center center
+	h1
+		@extend .title
+		z-index 1
+		color: #FFFFFF;
+		@media $xs-and-smaller
+			font-size: 20px
+			line-height 30px
+		
+	&__hero
+		width: 100%
+		padding-top 100px
+		display flex
+		justify-content: space-between
+		@media $sm-and-smaller
+			padding-top 50px
+		li
+			position: relative
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 27px;
+			text-align: center;
+			color: #FFFFFF;
+			text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+			z-index 1
+			@media $lg-and-smaller
+				font-size: 14px
+			@media  $xs-and-smaller
+				line-height 20px
+			img
+				size(132px)
+				object-fit: contain
+				object-position: center center
+				position: absolute
+				top -50px
+				left 50%
+				transform: translateX(-50%)
+				z-index -1
+				@media $sm-and-smaller
+					size(90px)
+					top -30px
+				@media $xs-and-smaller
+					size(60px)
+					top -10px
