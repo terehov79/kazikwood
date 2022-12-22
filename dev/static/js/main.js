@@ -13,22 +13,8 @@
     $(this).parents(".products__full").hide().prev().slideDown(0);
   });
 
-
-  // $(".products__full").on('click', function () {
-  //   $(this).hide().prev().show(300);
-  // });
-
   
-
-  // $('body').on ('click', function () {
-  //   $('.section__full').hide();
-  //   $('.section__mini').show();
-  // });
-
-  // $('.products__section').on ('click', function (event) {
-  //  event.stopPropaga
-
-
+  
   $(".swiper-container").each(function () {
     let $parent = $(this).parents('.slider');
     new Swiper(this, {
@@ -52,12 +38,15 @@
 
   let menuBtn = document.querySelector('.header__burger-btn');
   let menu = document.querySelector('.header__burger-menu');
-  menuBtn.addEventListener('click', function(){
+    menuBtn.addEventListener('click', function(){
     menuBtn.classList.toggle('active');
     menu.classList.toggle('active');
   })
 
-
+  $(".header__burger-btn").on('click', function () {
+    $(".container__menu").toggleClass('active');
+  }
+  );
   
 })(jQuery);
 
